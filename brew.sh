@@ -64,6 +64,8 @@ brew cask install google-chrome
 brew cask install keeweb
 brew cask install bettertouchtool
 brew cask install intellij-idea
+brew cask install flux
+brew cask install slack
 
 # Remove outdated versions from the cellar.
 brew cleanup
