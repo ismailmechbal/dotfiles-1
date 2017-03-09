@@ -58,6 +58,8 @@ brew install ssh-copy-id
 brew install tree
 brew install stow
 brew install the_silver_searcher
+brew install jenv
+brew install nvm
 
 # Install cask applications
 brew cask install google-chrome
