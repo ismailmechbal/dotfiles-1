@@ -134,7 +134,6 @@ set wildignore+=log/**
 set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
 
-"
 " ================ Scrolling ========================
 
 set scrolloff=8         "Start scrolling when we're 8 lines away from margins
@@ -148,3 +147,6 @@ set hlsearch        " Highlight searches by default
 set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
 
+" ================ KeyMapping =======================
+
+noremap <C-N> :NERDTreeToggle <cr> " Ctrl+N Open/Close NERDTree
