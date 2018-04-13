@@ -23,7 +23,7 @@ syntax on
 
 " Change leader to a comma because the backslash is too far away
 " That means all \x commands turn into ,x
-" The mapleader has to be set before vundle starts loading all 
+" The mapleader has to be set before vundle starts loading all
 " the plugins.
 let mapleader=","
 
@@ -53,7 +53,6 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'crosbymichael/vim-cfmt'
 Plugin 'cespare/vim-toml'
 Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'elzr/vim-json'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'rking/ag.vim'
 Plugin 'itchyny/lightline.vim'
@@ -61,7 +60,6 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'moll/vim-bbye'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'hynek/vim-python-pep8-indent'
-Plugin 'moorereason/vim-markdownfmt'
 Plugin 'chriskempson/base16-vim'
 Plugin 'wakatime/vim-wakatime'
 Plugin 'tomtom/tcomment_vim'
@@ -74,6 +72,9 @@ call vundle#end()
 
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on
+
+set background=dark
+colorscheme base16-default-light
 
 " ================ Turn Off Swap Files ==============
 
@@ -116,7 +117,7 @@ set linebreak    "Wrap lines at convenient points
 " ================ Folds ============================
 
 set foldmethod=indent   "fold based on indent
-set foldnestmax=3       "deepest fold is 3 levels
+set foldnestmax=12       "deepest fold is 3 levels
 set nofoldenable        "dont fold by default
 
 " ================ Completion =======================
@@ -147,6 +148,16 @@ set hlsearch        " Highlight searches by default
 set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
 
+" ================ Theming =======================
+
+let g:lightline = {
+      \ 'colorscheme': 'solarized',
+      \ }
+
 " ================ KeyMapping =======================
 
 noremap <C-N> :NERDTreeToggle <cr> " Ctrl+N Open/Close NERDTree
+
+" ================ AutoCMD =======================
+" autocmd BufEnter * EnableStripWhitespaceOnSave
+

@@ -49,5 +49,16 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 
 # Jenv setup
-echo PATH="$HOME/.jenv/bin:$PATH"
+export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+export JAVA_HOME="$(jenv javahome)"
+
+# rbenv setup
+export PATH="$HOME/.rbenv/shims:$PATH"
+
+# pip setup
+export PATH="$HOME/Library/Python/2.7/bin:$PATH"
+
+# nvm setuo
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
