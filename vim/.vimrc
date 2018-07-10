@@ -153,7 +153,7 @@ set smartcase       " ...unless we type a capital
 " ================ Theming =======================
 
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
+      \ 'colorscheme': '16color',
       \ }
 
 " ================ KeyMapping =======================
