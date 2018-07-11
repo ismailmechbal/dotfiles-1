@@ -67,7 +67,7 @@ brew cask install keeweb
 brew cask install bettertouchtool
 brew cask install intellij-idea
 brew cask install flux
-brew cask install slack
+# brew cask install slack
 brew cask install transmission
 
 # Remove outdated versions from the cellar.
